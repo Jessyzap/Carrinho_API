@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import me.dio.sacola.enumeration.FormaPagamento;
 
 import javax.persistence.*;
@@ -15,6 +16,7 @@ import java.util.List;
 @Data
 @Entity
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@NoArgsConstructor
 public class Sacola {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
